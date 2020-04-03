@@ -1,0 +1,22 @@
+server:
+  port: 8088
+  tomcat:
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:ORCL
+    username: TESTUSER
+    password: 12345678
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    max-idle: 100
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5

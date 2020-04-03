@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <!-- 查询管理用户 -->
+    <sql id="SECURITY_SELECT_USER">
+        <![CDATA[
+		SELECT
+			USERNAME,PASSWORD
+		FROM
+			TEST
+		WHERE
+			USERNAME = :username
+	]]>
+    </sql>
+    <sql id="SECURITY_INSERT_USER">
+        <![CDATA[
+		INSERT INTO
+			TEST
+		VALUES
+		    (:username,:password)
+	]]>
+    </sql>
+</root>
